@@ -40,8 +40,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav ,section{
+  /* removed section from list */
+  display: block;
 }
 #maincontent {
   background-color: #f3f3f3;
@@ -85,7 +86,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    /* width: calc(50% - 80px); */
 }
 
 /* Display list items side by side */
@@ -247,31 +248,34 @@ nav h1 a {
 }
 
 .inside header {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   z-index: 1000;
   grid-area: inside-header;
 }
 
-.inside main {
+#inside-maincontent {
   grid-area: inside-main;
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-  "inside-restaurant" "inside-restaurant" "inside-map" "inside-map"
-  "inside-reviews" "inside-reviews" "inside-map" "inside-map"
-  "inside-reviews" "inside-reviews" "inside-map" "inside-map"
-  "inside-reviews" "inside-reviews" "inside-map" "inside-map"
+  "inside-restaurant" "inside-map"
+  "inside-reviews" "inside-map"
+  "inside-reviews" "inside-map"
   ;
 }
 
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 87%;
-  position: fixed;
+  /* position: fixed; */
   right: 0;
   top: 80px;
   width: 50%;
+  margin-left: 50%;
+  height:100%;
   grid-area: inside-map;
 }
 .inside #map {
@@ -281,8 +285,8 @@ nav h1 a {
 }
 .inside #footer {
   bottom: 0;
-  position: absolute;
-  width: 50%;
+  /* position: absolute; */
+  width: 100%;
   grid-area: inside-footer;
 }
 #restaurant-name {
@@ -410,11 +414,6 @@ nav h1 a {
   }
 
  }
-
-
-
-
-
 
 
 @media screen and  (min-width: 900px) {
