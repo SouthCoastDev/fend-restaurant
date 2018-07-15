@@ -330,7 +330,6 @@ nav h1 a {
   display: grid;
 }
 #reviews-list li {
-
   background: #333;
   display: block;
   list-style-type: none;
@@ -347,24 +346,25 @@ nav h1 a {
   color: #666;
 }
 
-
-
-#review-name {
+.review-name {
   grid-area: review-name;
   grid-column: 1/1;
   grid-row: 1/1 ;
 }
-#review-date {
+
+.review-date {
   grid-area: review-date;
   grid-column: 2/2;
   grid-row: 1/1 ;
 }
-#review-rating {
+
+.review-rating {
   grid-area: review-rating;
   grid-column: 1/-1;
   grid-row: 2/2 ;
 }
-#review-comment {
+
+.review-comment {
   grid-area: review-comment;
   grid-column: 1/-1;
   grid-row: 3/3 ;
@@ -401,13 +401,13 @@ nav h1 a {
     text-transform: uppercase;
 }
 
-  #reviews-list li p:nth-child(4)  {
-    font-size: 8pt;
-    color:white;
-    font-weight: 300;
-    letter-spacing: 1px;
-    padding: 2px 0;
-    text-align: center;
+#reviews-list li p:nth-child(4)  {
+  font-size: 8pt;
+  color:white;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 2px 0;
+  text-align: center;
 }
 
 
@@ -520,7 +520,6 @@ nav h1 a {
 
  }
 
-
 @media screen and (min-width: 755px) {
   #restaurants-list {
     grid-template-columns: repeat(2, 1fr);
@@ -555,10 +554,6 @@ nav h1 a {
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: auto;
     grid-gap: 30px;
-  }
-
-  #reviews-list li {
-
   }
 
  }
