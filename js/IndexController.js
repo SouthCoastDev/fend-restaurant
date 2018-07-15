@@ -1,7 +1,13 @@
-navigator.serviceWorker.register('sw.js').then(function(reg){
-    console.log('yay');
-    console.log(reg);
-}).catch(function(err){
-    console.log('error!');
-    console.log(err);
-})
+
+
+
+if (navigator.serviceWorker) {
+    console.log('CLIENT: service worker registration in progress.');
+    navigator.serviceWorker.register('/sw.js').then(function() {
+      console.log('CLIENT: service worker registration complete.');
+    }, function() {
+      console.log('CLIENT: service worker registration failure.');
+    });
+  } else {
+    console.log('CLIENT: service worker is not supported.');
+  }
