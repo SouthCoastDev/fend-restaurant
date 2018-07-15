@@ -304,6 +304,7 @@ nav h1 a {
 }
 
 #inside-maincontent #restaurant-container {
+  padding:20px 0px 20px 20px;
   grid-area: inside-restaurant;
 }
 
@@ -329,13 +330,13 @@ nav h1 a {
   display: grid;
 }
 #reviews-list li {
-  background-color: #fff;
-    border: 2px solid #f3f3f3;
+
+  background: #333;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 20px 20px 20px 20px;
   position: relative;
   width: 85%;
 }
@@ -344,6 +345,69 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+
+
+#review-name {
+  grid-area: review-name;
+  grid-column: 1/1;
+  grid-row: 1/1 ;
+}
+#review-date {
+  grid-area: review-date;
+  grid-column: 2/2;
+  grid-row: 1/1 ;
+}
+#review-rating {
+  grid-area: review-rating;
+  grid-column: 1/-1;
+  grid-row: 2/2 ;
+}
+#review-comment {
+  grid-area: review-comment;
+  grid-column: 1/-1;
+  grid-row: 3/3 ;
+}
+
+#reviews-list li p:nth-child(1) {
+  margin-right: 5px;
+  font-size: 12pt;
+  color:white;
+  font-weight: 300;
+  letter-spacing: 5px;
+  padding: 2px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#reviews-list li p:nth-child(2)  {
+  font-size: 8pt;
+  color:white;
+  font-weight: 300;
+  letter-spacing: 5px;
+  padding: 2px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#reviews-list li p:nth-child(3)  {
+    font-size: 8pt;
+    color:white;
+    font-weight: 300;
+    letter-spacing: 5px;
+    padding: 2px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+  #reviews-list li p:nth-child(4)  {
+    font-size: 8pt;
+    color:white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 2px 0;
+    text-align: center;
 }
 
 
@@ -399,8 +463,11 @@ nav h1 a {
   }
 
   #reviews-list {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-template-rows: auto;
+    padding: 10px;
+    width:100%;
+
   }
 
 }
@@ -432,8 +499,9 @@ nav h1 a {
   }
 
   #inside-maincontent #reviews-container {
-    grid-row:3/2;
-    grid-column:1/-1 ;
+    grid-row: 3/2;
+    grid-column: 1/-1;
+    padding: 50px;
   }
 
   #reviews-list {
@@ -442,8 +510,16 @@ nav h1 a {
     grid-gap: 15px;
   }
 
+  #reviews-list li {
+    box-shadow: 2px 5px 22px 4px rgba(0,0,0,0.41);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: flex-start;
+  }
 
  }
+
 
 @media screen and (min-width: 755px) {
   #restaurants-list {
