@@ -1,13 +1,12 @@
 
 
-
 if (navigator.serviceWorker) {
-    console.log('CLIENT: service worker registration in progress.');
+    console.log('sw registration started.');
     navigator.serviceWorker.register('/sw.js').then(function() {
-      console.log('CLIENT: service worker registration complete.');
-    }, function() {
-      console.log('CLIENT: service worker registration failure.');
+      console.log('sw registration completed.');
+    }).catch(function() {
+      console.log('sw registration failed.');
     });
   } else {
-    console.log('CLIENT: service worker is not supported.');
+    console.log('SW not supported');
   }
