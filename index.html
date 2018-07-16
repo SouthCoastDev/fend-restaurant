@@ -18,17 +18,17 @@
 
   <main aria-label="Main content section" id="maincontent">
     <section aria-label="Map of New York" id="map-container">
-      <div id="map"></div>
+      <div role="map" id="map"></div>
     </section>
     <section id="restaurants">
       <div aria-label="Filter possible restaurant locations and cuisine types" class="filter-options">
         <h2>Filter Results</h2>
         <label for="neighborhoods-select">Select Neighborhood</label>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select role="select neighborhood" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
         <label for="cuisines-select">Select cuisine</label>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select role="select cuisine" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
