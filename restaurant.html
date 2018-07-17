@@ -17,12 +17,12 @@
     <!-- Beginning nav -->
     <nav>
       <h1><a tabindex="1" href="/">Restaurant Reviews</a></h1>
+      <!-- Beginning breadcrumb -->
+      <ul tabindex="2" role="breadcrumb trail for site" aria-label="breadcrumb trail for page location" id="breadcrumb" >
+        <li><a tabindex="3" role="link to home page" href="/">Home</a></li>
+      </ul>
+      <!-- End breadcrumb -->
     </nav>
-    <!-- Beginning breadcrumb -->
-    <ul tabindex="2" role="breadcrumb trail for site" aria-label="breadcrumb trail for page location" id="breadcrumb" >
-      <li><a tabindex="3" role="link to home page" href="/">Home</a></li>
-    </ul>
-    <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
   <!-- End header -->
@@ -31,12 +31,12 @@
   <main tabindex="4" aria-label="main content section" id="inside-maincontent">
     <!-- Beginning map -->
     <section tabindex="5" aria-label="map container - restaurant chosen centered" id="map-container">
-      <div tabindex="6" aria-label="user controllable map" role="map" id="map"></div>
+      <div tabindex="6" aria-label="user controllable map" role="application" id="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section tabindex="7" aria-label="Details about the chosen restaurant" id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+      <h2 id="restaurant-name"></h2>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>
