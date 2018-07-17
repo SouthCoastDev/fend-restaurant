@@ -16,11 +16,11 @@
   <header>
     <!-- Beginning nav -->
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1><a tabindex="1" href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul role="breadcrumb trail for site" aria-label="breadcrumb trail for page location" id="breadcrumb" >
-      <li><a  role="link to home page" href="/">Home</a></li>
+    <ul tabindex="2" role="breadcrumb trail for site" aria-label="breadcrumb trail for page location" id="breadcrumb" >
+      <li><a tabindex="3" role="link to home page" href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
@@ -28,14 +28,14 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main aria-label="main content section" id="inside-maincontent">
+  <main tabindex="4" aria-label="main content section" id="inside-maincontent">
     <!-- Beginning map -->
-    <section aria-label="map container - restaurant chosen centered" id="map-container">
-      <div role="map" id="map"></div>
+    <section tabindex="5" aria-label="map container - restaurant chosen centered" id="map-container">
+      <div tabindex="6" aria-label="user controllable map" role="map" id="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section aria-label="Details about the chosen restaurant" id="restaurant-container">
+    <section tabindex="7" aria-label="Details about the chosen restaurant" id="restaurant-container">
       <h1 id="restaurant-name"></h1>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
@@ -44,8 +44,8 @@
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section aria-label="Reviews for chosen restaurant" id="reviews-container">
-      <ul id="reviews-list"></ul>
+    <section tabindex="8" aria-label="Reviews for chosen restaurant" id="reviews-container">
+      <ul tabindex="9" id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
   </main>
