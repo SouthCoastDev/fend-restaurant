@@ -1,5 +1,6 @@
 var staticCacheName = 'retrev-static-v1';
 
+
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCacheName).then(function(cache) {
@@ -22,7 +23,7 @@ self.addEventListener('install', function(event) {
         'img/7.jpg',
         'img/8.jpg',
         'img/9.jpg',
-        'img/10.jpg',
+        'img/10.jpg'
       ]);
     })
   );
